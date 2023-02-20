@@ -24,4 +24,8 @@ public class Dueno {
     @OneToMany(targetEntity = Consulta.class, cascade = CascadeType.ALL)
     @JoinColumn(name = "cp_fk", referencedColumnName = "id")
     private List<Consulta> consultas;
+
+    @OneToMany(targetEntity = Mascota.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "dm_fk", referencedColumnName = "id")
+    private List<Mascota> mascotas;
 }
