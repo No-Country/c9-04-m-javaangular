@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomeController {
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String Home() {
         return "Welcome to the homepage";
     }
 
-    @PostMapping("/crear-cita")
+    @GetMapping("/crear-cita")
     public String Consulta() {
         return "Nueva consulta creada";
     }
