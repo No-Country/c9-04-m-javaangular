@@ -8,6 +8,7 @@ import { InfobodyComponent } from './infobody/infobody.component';
 import { FooterComponent } from './footer/footer.component';
 import { CarrosuelComponent } from './carrosuel/carrosuel.component';
 import { CalendaryComponent } from './calendary/calendary.component';
+import { MapsComponent } from './maps/maps.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CalendaryComponent } from './calendary/calendary.component';
     InfobodyComponent,
     FooterComponent,
     CarrosuelComponent,
-    CalendaryComponent
+    CalendaryComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule
