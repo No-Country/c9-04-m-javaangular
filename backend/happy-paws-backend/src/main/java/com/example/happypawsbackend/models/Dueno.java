@@ -19,6 +19,8 @@ public class Dueno {
     private int id;
     private String nombre;
     private String correo;
+    private String password;
+    private int enabled = 1;
     private int celular;
 
     @OneToMany(targetEntity = Consulta.class, cascade = CascadeType.ALL)
