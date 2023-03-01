@@ -24,7 +24,8 @@ import { MapsComponent } from './maps/maps.component';
     MapsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
