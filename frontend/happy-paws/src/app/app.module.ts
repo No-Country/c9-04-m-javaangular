@@ -22,7 +22,7 @@ import { MapsComponent } from './maps/maps.component';
     MapsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
