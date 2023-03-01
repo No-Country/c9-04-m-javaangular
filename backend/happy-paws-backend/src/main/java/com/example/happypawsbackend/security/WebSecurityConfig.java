@@ -52,9 +52,10 @@ public class WebSecurityConfig {
         jwtAuthenticationFilter.setFilterProcessesUrl("/login");
 
         return http
-                //.cors()
-                //.and()
-                .authorizeRequests()
+                .cors()
+                .and()
+                .csrf().disable()
+                .authorizeHttpRequests()
                 .anyRequest()
                 .authenticated()
                 .and()
