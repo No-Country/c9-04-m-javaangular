@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -22,7 +24,7 @@ import { MapsComponent } from './maps/maps.component';
     MapsComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

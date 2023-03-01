@@ -1,1 +1,33 @@
-<p>maps works!</p>
+<div class="w-full h-full">
+    <div class="mx-auto container grid grid-cols-1 mt-3">
+      <div class="flex flex-col items-center justify-center gap-y-10 ">
+        <div>
+          <p class="font-tipografia-Inter text-4xl text-button font-bold">Respondemos tus preguntas!</p>
+        </div>
+  
+        <div class="flex gap-x-4">
+  
+          <div class="flex items-center justify-center">
+            <img class="w-14 h-14" src="../../assets/imagenes/llamada.png" alt="" srcset="">
+            <p class="text-xl pl-2 font-semibold">+54 11 6253-4423</p>
+          </div>
+          <div class="flex items-center justify-center">
+            <img class="w-14 h-14" src="../../assets/imagenes/correo-electronico.png" alt="" srcset="">
+            <p class="text-xl pl-2 font-semibold">infohappypaws@gmail.com</p>
+          </div>
+          <div class="flex items-center justify-center">
+            <img class="w-14 h-14" src="../../assets/imagenes/ubicacion.png" alt="" srcset="">
+            <p class="text-xl pl-2 font-semibold">Avenida siempreviva 742</p>
+          </div>
+  
+          <div
+  class="map-container"
+  id="map"
+  leaflet
+  [leafletOptions]="leafletOptions"
+>       </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

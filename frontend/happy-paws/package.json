@@ -17,7 +17,13 @@
     "@angular/forms": "^14.1.0",
     "@angular/platform-browser": "^14.1.0",
     "@angular/platform-browser-dynamic": "^14.1.0",
+<<<<<<< HEAD
     "@angular/router": "^14.2.12",
+=======
+    "@angular/router": "^14.1.0",
+    "@asymmetrik/ngx-leaflet": "^14.0.1",
+    "leaflet": "^1.9.3",
+>>>>>>> 4c749aaab3cea4223f5d96fa1a5f4b2b04a1acfe
     "rxjs": "~7.5.0",
     "swiper": "^9.0.5",
     "tslib": "^2.3.0",
@@ -28,6 +34,7 @@
     "@angular/cli": "^15.2.0",
     "@angular/compiler-cli": "^14.1.0",
     "@types/jasmine": "~4.0.0",
+    "@types/leaflet": "^1.9.1",
     "autoprefixer": "^10.4.13",
     "jasmine-core": "~4.2.0",
     "karma": "~6.4.0",
