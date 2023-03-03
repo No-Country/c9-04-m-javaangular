@@ -22,24 +22,23 @@ export class MapsComponent {
     center: { lat: -31.375380878740653, lng: -64.14502602331522 },
     doubleClickZoom: false,
     closePopupOnClick: false,
-    dragging: false,
     trackResize: false,
     touchZoom: false,
     scrollWheelZoom: false,
     zoomControl: false
   }
-
+ 
   initMarkers() {
     const markerData = {
-      position: { lat: -64.14502602331522, lng: -64.14502602331522 },
-      draggable: false
+      position: { lat: -31.375380878740653, lng: -64.14502602331522 },
+      draggable: true
     }
 
     const marker = this.generateMarker(markerData, 0);
 
     marker.addTo(this.map);
 
-    this.map.panTo(markerData.position);
+    this.map.panTo([-31.375, -64.145]);
 
   }
 

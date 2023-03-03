@@ -5,10 +5,10 @@
       </div>
       <div class="col-span-4 flex flex-col lg:ml-28 2xl:ml-60 max-sm:items-center max-sm:justify-center">
               <div class="flex items-start justify-start sm:text-base sm:gap-x-3 md:text-sm md:gap-x-5 lg:text-lg xl:gap-x-8 2xl:text-xl max-sm:hidden font-medium">
-                <a href="http://" class="">Quienes somos</a>
-                <a href="http://" class="">Especialidades</a>
-                <a href="http://" class="">Reseñas</a>
-                <a href="http://" class="">Contacto</a>
+                <a routerLink="/login" class="">Quienes somos</a>
+                <a (click)="this.scrollToElement('link-especialidades')" class="">Especialidades</a>
+                <a (click)="this.scrollToElement('link-Reseñas')"  class="">Reseñas</a>
+                <a (click)="this.scrollToElement('link-Contacto')" class="">Contacto</a>
               </div>
   
               <div class="pt-10 sm:ml-32 lg:ml-40 max-sm:ml-0">
