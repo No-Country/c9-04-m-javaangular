@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
 
   // AQUI SE DEBE CAMBIAR LA LINEA PARA QUE LLEGUE AL BACKEND DEPLOYADO
   // EL BACKEND EN LA DIRECCION NUEVA
-  loginUrl = "http://localhost:8080/login";
+  loginUrl = "https://nocountry-09-04-production.up.railway.app/";
 
   checkLogin(user: any) {
     return this.http.post(this.loginUrl, user, {

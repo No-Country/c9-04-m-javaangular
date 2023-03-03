@@ -1,17 +1,14 @@
 <div
   id="overflow"
-  class="custom-gradient h-full w-full overflow-hidden pt-24 pb-60 bg-blue"
->
+  class="custom-gradient h-full w-full overflow-hidden pt-24 pb-60">
   <p
     id="editar"
-    class="sm:text-3xl md:text-4xl max-sm:hidden lg:text-5xl 2xl:text-7xl font-bold text-button font-tipografia-Inter text-center mb-10"
-  >
-    Patitas sanas<br />y felices
+    class="sm:text-3xl md:text-4xl max-sm:hidden lg:text-5xl 2xl:text-7xl font-bold text-button font-tipografia-Inter text-center mb-10">
+  Bienvenido de vuelta!
   </p>
 
   <div
-    class="flex place-content-center w-64 mx-auto py-8 bg-white block max-w-sm rounded-lg bg-white p-6 shadow-lg"
-  >
+    class="flex place-content-center w-[50%] h-[320px] mx-auto py-8 rounded-lg bg-white p-6 shadow-lg">
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="flex flex-col">
       <div class="relative mb-6" data-te-input-wrapper-init>
         <label for="email" class="">Email: </label>
@@ -19,8 +16,7 @@
           id="email"
           type="text"
           formControlName="email"
-          class="border-dark shadow-lg mt-4 bg-gray"
-        />
+          class="border-dark shadow-lg mt-4 bg-gray"/>
       </div>
 
       <div class="relative mb-6" data-te-input-wrapper-init>

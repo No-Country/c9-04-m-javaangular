@@ -19,15 +19,18 @@ export class NavbarComponent implements OnInit {
       this.appService.getIsSignedIn.subscribe(value => this.signedIn = value);
   }
 
+  ngOnInit(): void {
+  }
+
+  // toggleMobileMenu() {
+  //   this.mobileMenuOpen = !this.mobileMenuOpen;
+  // }
+
   // signIn() {
   //   if (this.cookieService.check('bearer_token')) {
   //     this.appService.setIsSignedIn(true);
   //   }
   // }
-
-  ngOnInit() {
-  }
-
 
   scrollToElement(elementId: string): void {
     document.getElementById(elementId)!.scrollIntoView({
