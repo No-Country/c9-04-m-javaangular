@@ -55,6 +55,8 @@ export class LoginComponent implements OnInit {
     return throwError(() => new Error('Something bad happened; please try again later.'));
   }
 
+  // AQUI SE DEBE CAMBIAR LA LINEA PARA QUE LLEGUE AL BACKEND DEPLOYADO
+  // EL BACKEND EN LA DIRECCION NUEVA
   loginUrl = "http://localhost:8080/login";
 
   checkLogin(user: any) {
