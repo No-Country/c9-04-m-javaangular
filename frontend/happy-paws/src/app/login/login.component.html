@@ -1,41 +1,47 @@
 <div
   id="overflow"
-  class="custom-gradient h-full w-full overflow-hidden pt-24 pb-60">
+  class="custom-gradient h-full w-full overflow-hidden pt-20 ">
   <p
     id="editar"
-    class="sm:text-3xl md:text-4xl max-sm:hidden lg:text-5xl 2xl:text-7xl font-bold text-button font-tipografia-Inter text-center mb-10">
+    class="sm:text-3xl max-sm:text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl font-bold text-button font-tipografia-Inter text-center mb-10">
   Bienvenido de vuelta!
   </p>
 
   <div
-    class="flex place-content-center w-[50%] h-[320px] mx-auto py-8 rounded-lg bg-white p-6 shadow-lg">
+    class="flex place-content-center items-center w-96 h-96 max-sm:w-80 max-sm:h-80 mx-auto container rounded-lg bg-white  shadow-lg">
     <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="flex flex-col">
-      <div class="relative mb-6" data-te-input-wrapper-init>
-        <label for="email" class="">Email: </label>
+      <div class="flex flex-col" data-te-input-wrapper-init>
+        <label for="email" class="text-gray-500">Email: </label>
+        <br>
         <input
           id="email"
           type="text"
           formControlName="email"
-          class="border-dark shadow-lg mt-4 bg-gray"/>
+          class="border-transparent drop-shadow-lg rounded-sm px-10 max-sm:px-7 mb-5 bg-gray focus:border-gray-400" />
       </div>
 
-      <div class="relative mb-6" data-te-input-wrapper-init>
-        <label for="password">Contraseña: </label>
+      <div class="flex flex-col" data-te-input-wrapper-init>
+        <label class="text-gray-500" for="password">Contraseña: </label>
+        <br>
         <input
           id="password"
           type="password"
           formControlName="password"
-          class="border-dark shadow-lg mt-4 bg-gray"
-        />
+          class="border-transparent drop-shadow-lg rounded-sm px-10 max-sm:px-7 mb-5 bg-gray focus:border-gray-400" />
       </div>
 
       <button
         type="submit"
-        class="bg-button rounded-lg px-5 py-2 font-semibold hover:bg-button_nigga"
+        class="bg-button text-white rounded-lg px-5 py-2 font-semibold hover:bg-button_nigga"
       >
         Login
       </button>
 
     </form>
   </div>
+
+  <div class="w-full h-full my-10">
+    <img src="../../assets/imagenes/fondologin.png" alt="" srcset="">
+  </div>
+
 </div>
