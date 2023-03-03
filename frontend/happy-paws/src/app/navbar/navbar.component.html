@@ -39,13 +39,20 @@
         <img id="logo" class="w-24 h-20 md:w-28 md:h-24" src="../../assets/imagenes/Logo.png" alt="Happy Paws"/>
       </div>
       <div class="col-span-4 flex items-center justify-end sm:text-base sm:gap-x-3 md:text-lg md:gap-x-5 lg:text-xl xl:gap-x-8 xl:text-2xl 2xl:text-4xl max-sm:hidden">
-            <a (click)="this.scrollToElement('link-principal')"  class="cursor-pointer">Quienes somos</a>
+            <a routerLinkActive="active" routerLink="/"  class="cursor-pointer">Quienes somos</a>
             <a (click)="this.scrollToElement('link-especialidades')" class="cursor-pointer">Especialidades</a>
             <a (click)="this.scrollToElement('link-Reseñas')"  class="cursor-pointer">Reseñas</a>
             <a (click)="this.scrollToElement('link-Contacto')" class="cursor-pointer">Contacto</a>
-          <button class="bg-button rounded-lg px-5 py-2 font-semibold hover:bg-button_nigga">
-            <a (click)="this.scrollToElement('link-Button')" href="http://" class="cursor-pointer  text-center text-white">Sign Up</a>
-          </button>
+            
+          <div *ngIf="signedIn; then thenBlock; else elseBlock"></div>
+          <ng-template #thenBlock>
+            <app-logout></app-logout>
+          </ng-template>
+          <ng-template #elseBlock>
+              <button class="bg-button rounded-lg px-5 py-2 font-semibold hover:bg-button_nigga">
+                <a routerLinkActive="active" routerLink="/login" class="cursor-pointer  text-center text-white">Login</a>
+              </button>
+          </ng-template>
       </div>
     </div>
   </nav>

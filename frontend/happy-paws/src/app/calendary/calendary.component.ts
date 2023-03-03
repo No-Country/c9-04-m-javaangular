@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+export {}; declare global { interface Window { Calendly: any; } };
 
 @Component({
   selector: 'app-calendary',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class CalendaryComponent {
 
+  ngOnInit() {
+    window.Calendly.initInlineWidget({
+      url: 'https://calendly.com/veterinaria-happy-paws/cita-mascota',
+      parentElement: document.querySelector('.calendly-inline-widget'),
+    });
+
+  }
 }
